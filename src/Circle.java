@@ -15,6 +15,6 @@ public class Circle extends Shape {
     }
     @Override
     public String toString() {
-        return "Коло [кольору" + shapeColor + ", радіусу= " + radius + "площа= " + calcArea() + "]";
+        return "Коло [кольору " + shapeColor + ", радіусу= " + radius + "площа= " + calcArea() + "]";
     }
 }

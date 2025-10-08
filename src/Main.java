@@ -10,10 +10,7 @@ public class Main {
                 new Triangle("black", 5,10),
                 new Circle("purple", 6),
                 new Circle("yellow",10),
-                new Rectangle("grey",15,25),
-                new Triangle("white", 5,15),
-                new Circle("grey",3),
-                new Rectangle("brown",2.5,4.5),
+
         };
         ShapeView view = new ShapeView();
         System.out.println("-----Усі фігури-----");
@@ -41,12 +38,12 @@ public class Main {
         view.showArea("Коло", circleArea);
 
         Arrays.sort(shapes, Comparator.comparingDouble(Shape::calcArea));
-        System.out.println("\n=== Sorted by Area ===");
+        System.out.println("\n===Сортування за площею===");
         view.showShapes(shapes);
 
 
         Arrays.sort(shapes, Comparator.comparing(Shape::getShapeColor));
-        System.out.println("\n=== Sorted by Color ===");
+        System.out.println("\n===Сортування за кольором===");
         view.showShapes(shapes);
         }
     }

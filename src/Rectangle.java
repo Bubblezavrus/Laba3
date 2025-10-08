@@ -17,6 +17,6 @@ public class Rectangle extends Shape {
     }
     @Override
     public String toString() {
-        return "Прямокутник [кольору" + shapeColor + ", ширина= " + width + ",довжина= " + height + "площа= " + calcArea() + "]";
+        return "Прямокутник [кольору " + shapeColor + ", ширина= " + width + ",довжина= " + height + "площа= " + calcArea() + "]";
     }
 }

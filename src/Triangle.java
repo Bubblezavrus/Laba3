@@ -17,6 +17,6 @@ public class Triangle extends Shape {
     }
     @Override
     public String toString() {
-        return "Трикутник [кольору" + shapeColor + ", ширина= " + base + ",довжина= " + height + "площа= " + calcArea() + "]";
+        return "Трикутник [кольору " + shapeColor + ", ширина= " + base + ",довжина= " + height + "площа= " + calcArea() + "]";
     }
 }

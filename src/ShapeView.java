@@ -5,9 +5,9 @@ public class ShapeView {
         }
     }
     public void showTotalArea(double total) {
-        System.out.println("\nЗагальна площина всіх фігур:");
+        System.out.println("\nЗагальна площина всіх фігур: " + total);
     }
     public void showArea(String type, double total) {
-        System.out.println("Загальна площина фігури:" + type + total);
+        System.out.println("Загальна площина фігури: " + type + total);
     }
 }

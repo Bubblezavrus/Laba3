@@ -12,9 +12,14 @@ public class Main {
                 new Circle("yellow",10),
 
         };
+
+        ShapeFileManager.saveShapesToFile(shapes, "shapes.dat");
+
+        Shape[] loadedShapes = ShapeFileManager.loadShapesFromFile("shapes.dat");
+
         ShapeView view = new ShapeView();
-        System.out.println("-----Усі фігури-----");
-        view.showShapes(shapes);
+        System.out.println("\n--- Фігури, зчитані з файлу ---");
+        view.showShapes(loadedShapes);
 
         double totalArea = 0;
         for (Shape s : shapes) {
@@ -40,7 +45,6 @@ public class Main {
         Arrays.sort(shapes, Comparator.comparingDouble(Shape::calcArea));
         System.out.println("\n===Сортування за площею===");
         view.showShapes(shapes);
-
 
         Arrays.sort(shapes, Comparator.comparing(Shape::getShapeColor));
         System.out.println("\n===Сортування за кольором===");
